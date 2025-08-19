@@ -1,0 +1,1290 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Happy Girlfriend's Day ❤️</title>
+    <link rel="stylesheet" href="styles.css" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,100..900;1,100..900&display=swap");
+    </style>
+    <!-- Lenis for smooth scrolling -->
+    <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.19/bundled/lenis.min.js"></script>
+    <!-- Swiper.js for story mode -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  </head>
+  <body>
+    <!-- Video Background (Full Opacity) -->
+    <div class="video-background">
+      <video autoplay muted loop playsinline id="bg-video" style="opacity: 1">
+        <source src="assets/Video/bg.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+    </div>
+    <!-- PAGE 1: Heart Home -->
+    <section class="page home-section" id="page-home">
+      <!-- <div class="love-bg"></div> -->
+      <canvas class="bg-heart-canvas"></canvas>
+      <h1 class="main-title animated-title">Happy Girlfriend's Day Darling</h1>
+      <div class="heart-center">
+        <!-- Heart animation from heart.html will be injected here -->
+        <div id="heart-container">
+          <canvas width="400" height="300" id="myLove"></canvas>
+        </div>
+      </div>
+      <div class="love-quote fade-in">
+        Even when love shatters, it finds its way to heal <br />
+        Because it knows , how much you love and care for me ❤️
+      </div>
+      <button
+        class="cta-button scroll-next"
+        data-target="#page-grids"
+        id="begin-journey-btn"
+      >
+        Begin the Tour Baby 😘
+      </button>
+      <audio
+        id="background-music"
+        src="assets/music/music.mp3"
+        preload="auto"
+      ></audio>
+    </section>
+
+    <!-- PAGE: Surprise Quizzes -->
+    <section class="page quiz-section" id="page-quiz" style="display: none">
+      <div class="love-bg"></div>
+      <canvas class="bg-heart-canvas"></canvas>
+      <h2 class="le">Naughty Quizzes 😉</h2>
+      <div class="quiz-boxes-container">
+        <!-- Box 1 -->
+        <div
+          class="quiz-box"
+          data-answer="Answer1"
+          data-hint="Question-Answer pair hint"
+        >
+          <div class="quiz-box-inner">
+            <div class="quiz-box-front">
+              <span class="quiz-emoji">💖</span
+              ><span class="quiz-label">Tap Me!</span>
+            </div>
+            <div class="quiz-box-back">
+              <div class="quiz-question">Question1</div>
+              <input
+                type="text"
+                class="quiz-input"
+                placeholder="Type your answer..."
+              />
+              <button class="quiz-submit">Submit</button>
+              <div class="quiz-hint"></div>
+              <div class="quiz-success"></div>
+            </div>
+          </div>
+        </div>
+        <!-- Box 2 -->
+        <div
+          class="quiz-box"
+          data-answer="Answer2"
+          data-hint="Question-Answer pair hint"
+        >
+          <div class="quiz-box-inner">
+            <div class="quiz-box-front">
+              <span class="quiz-emoji">🏠</span
+              ><span class="quiz-label">Tap Me!</span>
+            </div>
+            <div class="quiz-box-back">
+              <div class="quiz-question">Question2</div>
+              <input
+                type="text"
+                class="quiz-input"
+                placeholder="Type your answer..."
+              />
+              <button class="quiz-submit">Submit</button>
+              <div class="quiz-hint"></div>
+              <div class="quiz-success"></div>
+            </div>
+          </div>
+        </div>
+        <!-- Box 3 -->
+        <div
+          class="quiz-box"
+          data-answer="Answer3"
+          data-hint="Question-Answer pair hint"
+        >
+          <div class="quiz-box-inner">
+            <div class="quiz-box-front">
+              <span class="quiz-emoji">🥰</span
+              ><span class="quiz-label">Tap Me!</span>
+            </div>
+            <div class="quiz-box-back">
+              <div class="quiz-question">Question3</div>
+              <input
+                type="text"
+                class="quiz-input"
+                placeholder="Type your answer..."
+              />
+              <button class="quiz-submit">Submit</button>
+              <div class="quiz-hint"></div>
+              <div class="quiz-success"></div>
+            </div>
+          </div>
+        </div>
+        <!-- Box 4 -->
+        <div
+          class="quiz-box"
+          data-answer="Answer4"
+          data-hint="Question-Answer pair hint"
+        >
+          <div class="quiz-box-inner">
+            <div class="quiz-box-front">
+              <span class="quiz-emoji">🌎</span
+              ><span class="quiz-label">Tap Me!</span>
+            </div>
+            <div class="quiz-box-back">
+              <div class="quiz-question">Question4</div>
+              <input
+                type="text"
+                class="quiz-input"
+                placeholder="Type your answer..."
+              />
+              <button class="quiz-submit">Submit</button>
+              <div class="quiz-hint"></div>
+              <div class="quiz-success"></div>
+            </div>
+          </div>
+        </div>
+        <!-- Box 5: Fav meal -->
+        <div
+          class="quiz-box"
+          data-answer="Answer5"
+          data-hint="Question-Answer pair hint"
+          data-custom-success="Costom msg"
+        >
+          <div class="quiz-box-inner">
+            <div class="quiz-box-front">
+              <span class="quiz-emoji">😋</span
+              ><span class="quiz-label">Tap Me!</span>
+            </div>
+            <div class="quiz-box-back">
+              <div class="quiz-question">Question 5</div>
+              <input
+                type="text"
+                class="quiz-input"
+                placeholder="Type your answer..."
+              />
+              <button class="quiz-submit">Submit</button>
+              <div class="quiz-hint"></div>
+              <div class="quiz-success"></div>
+            </div>
+          </div>
+        </div>
+        <!-- Box 6: How was the whole surprise -->
+        <div
+          class="quiz-box"
+          data-answer="*"
+          data-hint=""
+          data-custom-success="Custom msg"
+        >
+          <div class="quiz-box-inner">
+            <div class="quiz-box-front">
+              <span class="quiz-emoji">🤗</span
+              ><span class="quiz-label">Tap Me!</span>
+            </div>
+            <div class="quiz-box-back">
+              <div class="quiz-question">Question6</div>
+              <input
+                type="text"
+                class="quiz-input"
+                placeholder="Type your answer..."
+              />
+              <button class="quiz-submit">Submit</button>
+              <div class="quiz-hint"></div>
+              <div class="quiz-success"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Back to home button for quiz page -->
+      <button class="cta-button home-nav-btn" id="back-to-home-btn">
+        Back to Home
+      </button>
+    </section>
+
+    <!-- PAGE 2: Grids Gallery -->
+    <section class="page grids-section" id="page-grids">
+      <div class="love-bg"></div>
+      <canvas class="bg-heart-canvas"></canvas>
+      <h2 class="section-title" style="text-align: center">
+        The Beauty where my Heart melts 😍
+      </h2>
+      <div id="grids-container">
+        <div class="gf-grid-wrapper">
+          <div class="gf-grid-items">
+            <!-- Removed 2 items from the beginning (photo1.jpg and photo2.jpg) -->
+            <div
+              class="gf-grid-item"
+              tabindex="0"
+              style="background-image: url('assets/images/photo3.jpg')"
+            ></div>
+            <div
+              class="gf-grid-item"
+              tabindex="0"
+              style="background-image: url('assets/images/photo4.jpg')"
+            ></div>
+            <div
+              class="gf-grid-item"
+              tabindex="0"
+              style="background-image: url('assets/images/photo5.jpg')"
+            ></div>
+            <div
+              class="gf-grid-item"
+              tabindex="0"
+              style="background-image: url('assets/images/photo6.jpg')"
+            ></div>
+            <div
+              class="gf-grid-item"
+              tabindex="0"
+              style="background-image: url('assets/images/photo7.jpg')"
+            ></div>
+            <div
+              class="gf-grid-item"
+              tabindex="0"
+              style="background-image: url('assets/images/photo8.jpg')"
+            ></div>
+            <div
+              class="gf-grid-item"
+              tabindex="0"
+              style="background-image: url('assets/images/photo9.jpg')"
+            ></div>
+            <div
+              class="gf-grid-item"
+              tabindex="0"
+              style="background-image: url('assets/images/photo10.jpg')"
+            ></div>
+            <div
+              class="gf-grid-item"
+              tabindex="0"
+              style="background-image: url('assets/images/photo11.jpg')"
+            ></div>
+          </div>
+        </div>
+      </div>
+      <button class="cta-button scroll-next" data-target="#page-cards">
+        Press me pwees 🥺
+      </button>
+    </section>
+
+    <!-- PAGE 3: Cards Gallery -->
+    <section class="page cards-section" id="page-cards">
+      <div class="love-bg"></div>
+      <canvas class="bg-heart-canvas"></canvas>
+      <h2 class="section-title" style="text-align: center">
+        Roles you play in my Life 👉👈
+      </h2>
+      <div id="cards-container">
+        <!-- 3D Interactive Card Gallery Start -->
+        <link
+          href="https://fonts.googleapis.com/css2?family=MuseoModerno:wght@300;400;500;600;700&display=swap"
+          rel="stylesheet"
+        />
+        <style>
+          /* 3D Card Gallery */
+          #wrapper {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 1.5rem;
+            margin: 6rem auto;
+            perspective: 800px;
+            flex-wrap: wrap;
+            z-index: 1;
+          }
+
+          .cwrapper {
+            perspective: 1200px;
+            transition: transform 0.5s ease;
+          }
+
+          .card {
+            width: 220px;
+            height: 340px;
+            border-radius: 18px;
+            box-shadow: 0 8px 32px rgba(61, 64, 91, 0.2),
+              0 2px 16px rgba(255, 255, 255, 0.5);
+            background: #fff;
+            transition: transform 0.6s cubic-bezier(0.1, 0.7, 0, 1);
+            transform-style: preserve-3d;
+            cursor: pointer;
+            position: relative;
+          }
+
+          .front,
+          .back {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            backface-visibility: hidden;
+            border-radius: 18px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            font-family: "Asap", sans-serif;
+          }
+
+          .front {
+            background: linear-gradient(
+              135deg,
+              rgb(240, 131, 137) 0%,
+              rgb(255, 255, 255) 50%,
+              rgb(162, 236, 255) 100%
+            );
+          }
+
+          .back {
+            transform: rotateY(180deg);
+            padding: 1.5rem;
+            overflow-y: auto;
+            word-break: break-word;
+            color: #3d405b;
+            font-weight: 600;
+            font-size: 1.1rem;
+            max-height: 90%;
+            box-sizing: border-box;
+            text-align: center;
+          }
+
+          /* Theme-based gradients for card backs */
+          .cwrapper[data-theme="html"] .back {
+            background: linear-gradient(
+              135deg,
+              rgb(162, 236, 255) 0%,
+              rgb(255, 255, 255) 50%,
+              rgb(240, 131, 137) 100%
+            );
+            color: black;
+          }
+
+          .cwrapper[data-theme="css"] .back {
+            background: linear-gradient(
+              135deg,
+              rgb(162, 236, 255) 0%,
+              rgb(255, 255, 255) 50%,
+              rgb(240, 131, 137) 100%
+            );
+            color: black;
+          }
+
+          .cwrapper[data-theme="js"] .back {
+            background: linear-gradient(
+              135deg,
+              rgb(162, 236, 255) 0%,
+              rgb(255, 255, 255) 50%,
+              rgb(240, 131, 137) 100%
+            );
+            color: black;
+          }
+
+          .cwrapper[data-theme="vue"] .back {
+            background: linear-gradient(
+              135deg,
+              rgb(162, 236, 255) 0%,
+              rgb(255, 255, 255) 50%,
+              rgb(240, 131, 137) 100%
+            );
+            color: black;
+          }
+
+          .cwrapper[data-theme="python"] .back {
+            background: linear-gradient(
+              135deg,
+              rgb(162, 236, 255) 0%,
+              rgb(255, 255, 255) 50%,
+              rgb(240, 131, 137) 100%
+            );
+            color: black;
+          }
+
+          .pic-holder {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            background-size: cover;
+            background-position: center;
+            margin-bottom: 1.5rem;
+            box-shadow: 0 2px 12px rgba(255, 105, 180, 0.5);
+            overflow: hidden;
+          }
+
+          .pic-holder img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 50%;
+          }
+
+          .front h2 {
+            font-family: "Asap", sans-serif;
+            font-weight: 600;
+            color: #3d405b;
+            margin-top: 0.5rem;
+            font-size: 1.5rem;
+          }
+
+          /* Responsive */
+          @media (max-width: 900px) {
+            #wrapper {
+              gap: 1.2rem;
+            }
+            .card {
+              width: 170px;
+              height: 260px;
+            }
+            .pic-holder {
+              width: 70px;
+              height: 70px;
+            }
+          }
+        </style>
+        <div id="wrapper">
+          <div class="cwrapper" data-theme="html">
+            <div class="card">
+              <div class="front">
+                <div class="pic-holder">
+                  <img src="assets/images/pic1.jpg" alt="GF1" />
+                </div>
+                <h2>Role 1</h2>
+              </div>
+              <div class="back">
+                <p>
+                  Reason 1<br />
+                  ❣️
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="cwrapper" data-theme="css">
+            <div class="card">
+              <div class="front">
+                <div class="pic-holder">
+                  <img src="assets/images/pic2.jpg" alt="GF2" />
+                </div>
+                <h2>Role 2</h2>
+              </div>
+              <div class="back">
+                <p>
+                  Reason 2<br />
+                  ❣️
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="cwrapper" data-theme="js">
+            <div class="card">
+              <div class="front">
+                <div class="pic-holder">
+                  <img src="assets/images/pic3.jpg" alt="GF3" />
+                </div>
+                <h2>Role 3</h2>
+              </div>
+              <div class="back">
+                <p>
+                  Reason 3<br />
+                  ❣️
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="cwrapper" data-theme="vue">
+            <div class="card">
+              <div class="front">
+                <div class="pic-holder">
+                  <img src="assets/images/pic4.jpg" alt="GF4" />
+                </div>
+                <h2>Role 4</h2>
+              </div>
+              <div class="back">
+                <p>
+                  Reason 4<br />
+                  ❣️
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="cwrapper" data-theme="python">
+            <div class="card">
+              <div class="front">
+                <div class="pic-holder">
+                  <img src="assets/images/pic5.jpg" alt="GF5" />
+                </div>
+                <h2>Role 5</h2>
+              </div>
+              <div class="back">
+                <p>
+                  Reason 5<br />
+                  ❣️
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <script>
+          // 3D Card Gallery Functionality
+          const wrapper = document.getElementById("wrapper");
+          if (wrapper) {
+            const cards = wrapper.querySelectorAll(".card");
+            const cardWrappers = wrapper.querySelectorAll(".cwrapper");
+
+            // Center card initially
+            updateCardPositions();
+
+            // Add event listeners to each card wrapper
+            cardWrappers.forEach((cardWrapper, index) => {
+              // Mouse enter event - highlight card
+              cardWrapper.addEventListener("mouseenter", () => {
+                // Make this card the center card
+                cardWrappers.forEach((cw, i) => {
+                  if (i < index) {
+                    // Cards to the left
+                    cw.style.transform =
+                      "perspective(1200px) rotateY(30deg) translateZ(-50px)";
+                  } else if (i > index) {
+                    // Cards to the right
+                    cw.style.transform =
+                      "perspective(1200px) rotateY(-30deg) translateZ(-50px)";
+                  } else {
+                    // Center (hovered) card
+                    cw.style.transform =
+                      "perspective(1200px) rotateY(0deg) translateZ(50px) scale(1.1)";
+                  }
+                });
+              });
+              cardWrapper.addEventListener("mouseleave", () => {
+                updateCardPositions();
+              });
+              const card = cardWrapper.querySelector(".card");
+              card.addEventListener("click", () => {
+                card.style.transform =
+                  card.style.transform === "rotateY(180deg)"
+                    ? "rotateY(0deg)"
+                    : "rotateY(180deg)";
+              });
+            });
+
+            function updateCardPositions() {
+              cardWrappers.forEach((cw) => {
+                cw.style.transform =
+                  "perspective(1200px) rotateY(0deg) translateZ(0)";
+              });
+            }
+          }
+        </script>
+        <!-- 3D Interactive Card Gallery End -->
+      </div>
+      <button class="cta-button scroll-next" data-target="#page-story">
+        Press me pwees 🥺
+      </button>
+    </section>
+
+    <!-- PAGE 4: Story Mode (Swiper) -->
+    <section class="page story-section" id="page-story">
+      <div class="love-bg"></div>
+      <canvas class="bg-heart-canvas"></canvas>
+      <h2 class="section-title" style="text-align: center">Togetherness</h2>
+      <div class="swiper story-swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="flower-card">
+              <img
+                src="assets/images/image1.jpg"
+                alt="flower1"
+                class="flower-image"
+              />
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="flower-card active">
+              <img
+                src="assets/images/image2.jpg"
+                alt="flower2"
+                class="flower-image"
+              />
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="flower-card">
+              <img
+                src="assets/images/image3.jpg"
+                alt="flower3"
+                class="flower-image"
+              />
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="flower-card">
+              <img
+                src="assets/images/image4.jpg"
+                alt="flower4"
+                class="flower-image"
+              />
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="flower-card">
+              <img
+                src="assets/images/image5.jpg"
+                alt="flower5"
+                class="flower-image"
+              />
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="flower-card">
+              <img
+                src="assets/images/image6.jpg"
+                alt="flower6"
+                class="flower-image"
+              />
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="flower-card">
+              <img
+                src="assets/images/image7.jpg"
+                alt="flower7"
+                class="flower-image"
+              />
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="flower-card">
+              <img
+                src="assets/images/image8.jpg"
+                alt="flower8"
+                class="flower-image"
+              />
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="flower-card">
+              <img
+                src="assets/images/image9.jpg"
+                alt="flower9"
+                class="flower-image"
+              />
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="flower-card">
+              <img
+                src="assets/images/image10.jpg"
+                alt="flower10"
+                class="flower-image"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+      <!-- Final Surprise button removed -->
+    </section>
+
+    <!-- PAGE 5: Final Surprise -->
+    <section class="page surprise-section" id="page-surprise">
+      <div class="love-bg"></div>
+      <canvas class="bg-heart-canvas"></canvas>
+      <div
+        class="shayari-section"
+        style="
+          display: grid;
+          grid-template-columns: 1fr 1.2fr;
+          gap: 2.5rem;
+          align-items: center;
+          justify-content: center;
+          margin: 3rem 2vw 2rem 2vw;
+          width: calc(100vw - 4vw);
+          max-width: 1200px;
+        "
+      >
+        <div class="shayari-img-box">
+          <img
+            src="assets/images/photo14.jpg"
+            alt="Love"
+            class="shayari-img"
+            style="
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+              border-radius: 18px;
+              box-shadow: none;
+            "
+          />
+        </div>
+        <div
+          class="shayari-box"
+          style="
+            width: 100%;
+            min-width: 240px;
+            max-width: 600px;
+            min-height: 180px;
+            background: linear-gradient(135deg, #fff 60%, #f1faee 100%);
+            border-radius: 32px;
+            box-shadow: 0 8px 32px #457b9d55, 0 0 32px 8px #e6394688,
+              0 0 32px 8px #fff8;
+            padding: 2.2rem 2rem 2rem 2rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.3rem;
+            color: #22223b;
+            border: 2px solid #e63946;
+            position: relative;
+            overflow: hidden;
+            animation: shayariGlitter 2.5s infinite alternate;
+            font-family: 'Asap', sans-serif;
+            font-weight: bold;
+            text-align: center;
+          "
+        >
+          <div style="width: 100%">
+            Dedicate a "shayari" for her, in this section
+            <span
+              style="
+                display: block;
+                margin-top: 1.2rem;
+                font-size: 1.1rem;
+                color: #e63946;
+              "
+              >— yours..❤️</span
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Surprise Quizzes button at the bottom of the page -->
+    <button
+      class="cta-button quiz-nav-btn show-quiz-btn"
+      style="margin: 2.5rem auto 2.5rem auto; display: block"
+    >
+      Surprise Quizzes
+    </button>
+    <script src="script.js"></script>
+    <script>
+      // Quiz page navigation logic for all Surprise Quizzes buttons
+      document.addEventListener("DOMContentLoaded", function () {
+        // Play music when Begin Our Journey button is clicked
+        const beginJourneyBtn = document.getElementById("begin-journey-btn");
+        const backgroundMusic = document.getElementById("background-music");
+
+        if (beginJourneyBtn && backgroundMusic) {
+          beginJourneyBtn.addEventListener("click", function () {
+            backgroundMusic.play().catch((error) => {
+              console.log("Audio playback failed:", error);
+            });
+          });
+        }
+
+        const quizBtns = document.querySelectorAll(".show-quiz-btn");
+        const quizSection = document.getElementById("page-quiz");
+        const homeSection = document.getElementById("page-home");
+        const backToHomeBtn = document.getElementById("back-to-home-btn");
+
+        // Hide the Surprise Quizzes button when on the quiz page
+        const hideQuizButtonOnQuizPage = function () {
+          const quizNavBtn = document.querySelector(".quiz-nav-btn");
+          if (quizNavBtn) {
+            quizNavBtn.style.display =
+              quizSection.style.display === "flex" ? "none" : "block";
+          }
+        };
+
+        // Show quiz page when quiz buttons are clicked
+        quizBtns.forEach((btn) => {
+          btn.addEventListener("click", function () {
+            document
+              .querySelectorAll(".page")
+              .forEach((p) => (p.style.display = "none"));
+            quizSection.style.display = "flex";
+            hideQuizButtonOnQuizPage();
+            window.scrollTo({ top: 0, behavior: "smooth" });
+          });
+        });
+
+        // Back to home button functionality
+        if (backToHomeBtn) {
+          backToHomeBtn.addEventListener("click", function () {
+            // Refresh the page to navigate to the home page
+            window.location.reload();
+          });
+        }
+      });
+    </script>
+    <script>
+      // Love Quiz Interactivity with unique success messages
+      (function () {
+        const quizBoxes = document.querySelectorAll(".quiz-box");
+        const successMessages = [
+          "Correct answer response 1",
+          "Correct answer response 2",
+          "Correct answer response 3",
+          "Correct answer response 4",
+          "Correct answer response 5",
+          "Correct answer response 6",
+        ];
+        quizBoxes.forEach((box, idx) => {
+          const inner = box.querySelector(".quiz-box-inner");
+          const front = box.querySelector(".quiz-box-front");
+          const back = box.querySelector(".quiz-box-back");
+          const input = box.querySelector(".quiz-input");
+          const submit = box.querySelector(".quiz-submit");
+          const hint = box.querySelector(".quiz-hint");
+          const success = box.querySelector(".quiz-success");
+          let attempts = 0;
+          front.addEventListener("click", () => {
+            box.classList.toggle("flipped");
+            input.focus();
+          });
+          submit.addEventListener("click", () => {
+            const answer = box.dataset.answer.trim().toLowerCase();
+            const user = input.value.trim().toLowerCase();
+            // Last quiz: accept any answer
+            if ((answer === "*" && user.length > 0) || user === answer) {
+              const customMsg = box.dataset.customSuccess;
+              success.innerHTML =
+                customMsg || successMessages[idx] || "Success msg 1";
+              hint.innerHTML = "";
+              box.classList.add("quiz-correct");
+              // Confetti effect
+              confettiEffect(box);
+              input.disabled = true;
+              submit.disabled = true;
+            } else {
+              attempts++;
+              if (attempts === 1) {
+                hint.innerHTML = box.dataset.hint;
+              } else {
+                hint.innerHTML = "Wrong answer 1";
+              }
+              success.innerHTML = "";
+            }
+          });
+        });
+        // Simple confetti effect
+        function confettiEffect(box) {
+          const confetti = document.createElement("div");
+          confetti.className = "confetti";
+          for (let i = 0; i < 30; i++) {
+            const dot = document.createElement("span");
+            dot.className = "confetti-dot";
+            dot.style.left = Math.random() * 100 + "%";
+            dot.style.background = `hsl(${Math.random() * 360},90%,80%)`;
+            dot.style.animationDelay = Math.random() * 0.7 + "s";
+            confetti.appendChild(dot);
+          }
+          box.appendChild(confetti);
+          setTimeout(() => {
+            confetti.remove();
+          }, 1800);
+        }
+      })();
+    </script>
+    <script>
+      // Swiper.js story mode initialization
+      document.addEventListener("DOMContentLoaded", function () {
+        new Swiper(".story-swiper", {
+          effect: "coverflow",
+          grabCursor: true,
+          centeredSlides: true,
+          slidesPerView: "auto",
+          loop: true,
+          loopedSlides: 5,
+          autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+          },
+          initialSlide: 1,
+          coverflowEffect: {
+            rotate: 0,
+            stretch: 0,
+            depth: 100,
+            modifier: 2,
+            slideShadows: false,
+          },
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+        });
+      });
+    </script>
+    <script>
+      // Cards gallery effect from cards.html, namespaced for this project
+      (function () {
+        const cards = document.querySelectorAll(".gf-card");
+        cards.forEach((c) => {
+          c.addEventListener("mouseenter", hoverEffects);
+          c.addEventListener("mouseleave", leaveEffects);
+          c.addEventListener("click", turnEffects);
+        });
+        function hoverEffects(e) {
+          const card = e.currentTarget;
+          const wrapper = card.parentElement;
+          wrapper.style.zIndex = "2";
+          card.style.transform = "translateZ(50px)";
+          card.querySelector(".gf-front .gf-pic-holder").style.transform =
+            "translateZ(60px)";
+          // Siblings effect omitted for simplicity
+        }
+        function leaveEffects(e) {
+          const card = e.currentTarget;
+          card.style.transform = "";
+          card.classList.remove("is-turned");
+          const wrapper = card.parentElement;
+          wrapper.style.zIndex = "0";
+          card.querySelector(".gf-front .gf-pic-holder").style.transform = "";
+        }
+        function turnEffects(e) {
+          const card = e.currentTarget;
+          if (card.classList.contains("is-turned")) {
+            card.style.transform = "translateZ(50px) rotateY(0)";
+            card.classList.remove("is-turned");
+          } else {
+            card.style.transform = "translateZ(50px) rotateY(180deg)";
+            card.classList.add("is-turned");
+          }
+        }
+      })();
+    </script>
+    <script>
+      // Grids gallery effect from grids.html, namespaced for this project
+      (function () {
+        const items = document.querySelectorAll(".gf-grid-item");
+        const gridWrapper = document.querySelector(".gf-grid-wrapper");
+        const wrapperHeight = gridWrapper.offsetHeight;
+        const middleIndex = Math.floor(items.length / 2);
+
+        // Set initial heights for camel-hump effect
+        function setCamelHumpHeights() {
+          // Get the current wrapper height (in case it changed)
+          const currentWrapperHeight = gridWrapper.offsetHeight;
+
+          items.forEach((item, index) => {
+            // Calculate distance from middle item (0 to middleIndex)
+            const distanceFromMiddle = Math.abs(index - middleIndex);
+
+            if (distanceFromMiddle === 0) {
+              // Middle item gets exactly the same height as the wrapper
+              item.style.height = currentWrapperHeight + "px";
+            } else {
+              // Other items get gradually reduced height
+              // The formula creates a curve that decreases as you move away from the middle
+              // Reduction factor: 8% per item away from center
+              const reductionFactor = 0.08 * distanceFromMiddle;
+              const heightPercentage = 100 - reductionFactor * 100;
+              const minHeightPercentage = 50; // Minimum height percentage
+
+              // Ensure height doesn't go below minimum
+              const finalHeightPercentage = Math.max(
+                minHeightPercentage,
+                heightPercentage
+              );
+
+              // Set the height based on the wrapper's height
+              const itemHeight =
+                (currentWrapperHeight * finalHeightPercentage) / 100 + "px";
+              item.style.height = itemHeight;
+            }
+          });
+        }
+
+        // Set initial heights
+        setCamelHumpHeights();
+
+        // Update heights on window resize
+        window.addEventListener("resize", setCamelHumpHeights);
+
+        // Keep original hover/focus effects
+        items.forEach((item) => {
+          item.addEventListener("mouseenter", function () {
+            this.style.filter = "inherit";
+            this.style.transform = "translateZ(80px)";
+          });
+          item.addEventListener("mouseleave", function () {
+            this.style.filter = "";
+            this.style.transform = "";
+          });
+          item.addEventListener("focus", function () {
+            this.style.width = "28vw";
+            this.style.filter = "inherit";
+            this.style.zIndex = 100;
+            this.style.transform = "translateZ(80px)";
+          });
+          item.addEventListener("blur", function () {
+            this.style.width = "";
+            this.style.filter = "";
+            this.style.zIndex = "";
+            this.style.transform = "";
+            // Reset the height to maintain camel-hump effect after blur
+            setCamelHumpHeights();
+          });
+        });
+      })();
+    </script>
+    <script>
+      // Heart animation from heart.html, namespaced to avoid conflicts
+      (function () {
+        var FX = {
+          config: {
+            background: "rgba(250,250,250,0.2)",
+            color: "rgb(250,20,75)",
+            highlight: "rgb(250,20,20)",
+          },
+          dots: [],
+        };
+        var canvas = document.getElementById("myLove");
+        if (!canvas) return;
+        FX.canvas = canvas;
+        FX.ctx = FX.canvas.getContext("2d");
+        Math.TO_RAD = Math.PI / 180;
+        Math.getDistance = function (x1, y1, x2, y2) {
+          var xs = x1 - x2,
+            ys = y1 - y2;
+          return Math.sqrt(xs * xs + ys * ys);
+        };
+        Math.getDegree = function (x1, y1, x2, y2) {
+          var dx = x2 - x1,
+            dy = y2 - y1;
+          return Math.atan2(dy, dx) / Math.TO_RAD;
+        };
+        var Dot = function (opts) {
+          this.color = opts.color;
+          this.x = 0;
+          this.y = 0;
+          this.dest_x = opts.dest_x - 75;
+          this.dest_y = opts.dest_y - 75;
+        };
+        Dot.prototype.update = function () {
+          var d = this,
+            dist_x = d.dest_x - d.x,
+            dist_y = d.dest_y - d.y;
+          d.x += dist_x * 0.05;
+          d.y += dist_y * 0.05;
+          FX.ctx.fillStyle = d.color;
+          FX.ctx.fillRect(d.x - 2, d.y - 2, 4, 4);
+        };
+        FX.setFullscreen = function () {
+          FX.width = FX.canvas.width = 400;
+          FX.height = FX.canvas.height = 300;
+        };
+        FX.handleMouseEvent = function (e, power) {
+          var radius = 75,
+            k = FX.dots.length,
+            i = 0,
+            mx,
+            my,
+            dist,
+            degree,
+            d;
+          var rect = FX.canvas.getBoundingClientRect();
+          mx = e.clientX - rect.left;
+          my = e.clientY - rect.top;
+          mx -= FX.width / 2;
+          my -= FX.height / 2;
+          for (; i < k; i = i + 1) {
+            d = FX.dots[i];
+            dist = Math.getDistance(mx, my, d.x, d.y);
+            if (dist < radius) {
+              degree = Math.getDegree(d.x, d.y, mx, my);
+              d.x += Math.cos(degree * Math.TO_RAD) * ((radius - dist) * power);
+              d.y += Math.sin(degree * Math.TO_RAD) * ((radius - dist) * power);
+              d.color = FX.config.highlight;
+            } else {
+              d.color = FX.config.color;
+            }
+          }
+        };
+        FX.createHeart = function () {
+          var coords = [
+              [1, 4],
+              [1, 5],
+              [1, 6],
+              [1, 7],
+              [1, 8],
+              [2, 3],
+              [2, 4],
+              [2, 5],
+              [2, 6],
+              [2, 7],
+              [2, 8],
+              [2, 9],
+              [3, 2],
+              [3, 3],
+              [3, 4],
+              [3, 5],
+              [3, 6],
+              [3, 7],
+              [3, 8],
+              [3, 9],
+              [3, 10],
+              [4, 2],
+              [4, 3],
+              [4, 4],
+              [4, 5],
+              [4, 6],
+              [4, 7],
+              [4, 8],
+              [4, 9],
+              [4, 10],
+              [4, 11],
+              [5, 2],
+              [5, 3],
+              [5, 4],
+              [5, 5],
+              [5, 6],
+              [5, 7],
+              [5, 8],
+              [5, 9],
+              [5, 10],
+              [5, 11],
+              [6, 2],
+              [6, 3],
+              [6, 4],
+              [6, 5],
+              [6, 6],
+              [6, 7],
+              [6, 8],
+              [6, 9],
+              [6, 10],
+              [6, 11],
+              [6, 12],
+              [7, 3],
+              [7, 4],
+              [7, 5],
+              [7, 6],
+              [7, 7],
+              [7, 8],
+              [7, 9],
+              [7, 10],
+              [7, 11],
+              [7, 12],
+              [8, 3],
+              [8, 4],
+              [8, 5],
+              [8, 6],
+              [8, 7],
+              [8, 8],
+              [8, 9],
+              [8, 10],
+              [8, 11],
+              [8, 12],
+              [8, 13],
+              [9, 2],
+              [9, 3],
+              [9, 4],
+              [9, 5],
+              [9, 6],
+              [9, 7],
+              [9, 8],
+              [9, 9],
+              [9, 10],
+              [9, 11],
+              [9, 12],
+              [10, 2],
+              [10, 3],
+              [10, 4],
+              [10, 5],
+              [10, 6],
+              [10, 7],
+              [10, 8],
+              [10, 9],
+              [10, 10],
+              [10, 11],
+              [11, 2],
+              [11, 3],
+              [11, 4],
+              [11, 5],
+              [11, 6],
+              [11, 7],
+              [11, 8],
+              [11, 9],
+              [11, 10],
+              [11, 11],
+              [12, 2],
+              [12, 3],
+              [12, 4],
+              [12, 5],
+              [12, 6],
+              [12, 7],
+              [12, 8],
+              [12, 9],
+              [12, 10],
+              [13, 3],
+              [13, 4],
+              [13, 5],
+              [13, 6],
+              [13, 7],
+              [13, 8],
+              [13, 9],
+              [14, 4],
+              [14, 5],
+              [14, 6],
+              [14, 7],
+              [14, 8],
+            ],
+            k = coords.length,
+            raster = 10,
+            i = 0;
+          for (; i < k; i = i + 1) {
+            FX.dots.push(
+              new Dot({
+                dest_x: coords[i][0] * raster,
+                dest_y: coords[i][1] * raster,
+                color: FX.config.color,
+              })
+            );
+          }
+        };
+        FX.loop = function () {
+          var ctx = FX.ctx,
+            k = FX.dots.length,
+            i = 0;
+          ctx.fillStyle = FX.config.background;
+          ctx.fillRect(0, 0, FX.width, FX.height);
+          ctx.save();
+          ctx.translate(FX.width / 2, FX.height / 2);
+          for (; i < k; i = i + 1) {
+            FX.dots[i].update();
+          }
+          ctx.restore();
+          requestAnimationFrame(FX.loop);
+        };
+        FX.setFullscreen();
+        FX.createHeart();
+        FX.loop();
+        FX.canvas.addEventListener("mousemove", function (e) {
+          FX.handleMouseEvent(e, -0.1);
+        });
+        FX.canvas.addEventListener("mousedown", function (e) {
+          FX.handleMouseEvent(e, 1);
+        });
+      })();
+    </script>
+  </body>
+</html>
