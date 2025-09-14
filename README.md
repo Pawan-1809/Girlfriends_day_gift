@@ -32,10 +32,3 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
 
 This project is licensed under the MIT License. See [LICENSE](LICENSE) for details.
 
-## Demo
-
-Add a screenshot or GIF here to show what the project looks like.
-
----
-
-Feel free to fork, modify, and share your own version!
